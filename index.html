@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicSense - Rate Your City</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background: white;
+      color: #2563eb;
+      padding: 0.85rem 1.7rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #f3f4f6;
+      transform: translateY(-2px);
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-weight: 700;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .step {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .step:hover {
+      transform: translateY(-3px);
+    }
+    .faq p {
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: #111827;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CivicSense</h1>
+    <p>Rate and compare civic sense across cities worldwide</p>
+  </header>
+
+  <section class="hero">
+    <h2>How does your city score?</h2>
+    <p>Join the global conversation about cleanliness, traffic, courtesy, and civic sense.</p>
+    <a href="#" class="btn">Sign in with Google (Coming Soon)</a>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step"><b>Step 1:</b> Pick your city or country</div>
+      <div class="step"><b>Step 2:</b> Rate civic sense from your perspective</div>
+      <div class="step"><b>Step 3:</b> Compare insider vs outsider views globally</div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <p><b>What is CivicSense?</b><br>
+    A platform where locals and visitors rate cities on civic sense.</p>
+    <p><b>How do I join?</b><br>
+    Sign in with your Google account (coming soon!) and start rating.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 CivicSense. All rights reserved.</p>
+  </footer>
+</body>
+</html>
