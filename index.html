@@ -132,5 +132,26 @@
   <footer>
     <p>© 2025 CivicSense. All rights reserved.</p>
   </footer>
+
+    <script type="module">
+    import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+
+    const SUPABASE_URL = "https://YOUR-PROJECT-REF.supabase.co";
+    const SUPABASE_ANON_KEY = "YOUR-ANON-KEY";
+
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    const { data, error } = await supabase
+      .from("ratings")
+      .select("city,country,is_local,category,score,created_at")
+      .order("created_at", { ascending: false })
+      .limit(5);
+
+    if (error) {
+      console.error("Supabase error:", error);
+    } else {
+      console.log("Latest ratings:", data);
+    }
+  </script>
 </body>
-</html>
+</html> 
